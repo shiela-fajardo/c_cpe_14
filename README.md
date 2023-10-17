@@ -39,3 +39,10 @@ If you wish to contribute code, offer fixes or improvements, please send a pull 
 
 ## License
 Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+
+
+.env file is an environment file providing values into the runtime environment of CAP service.
+API key is used to call the Business Partner API in the API Business Hub Sandbox Environment
+
+implement a custom service handler for the external BusinessPartner service in the next step.
+make sure to stop CDS watch first then relaunch cds watch
