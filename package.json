@@ -62,7 +62,10 @@
         }
       },
       "db": "hana",
-      "auth": "xsuaa"
+      "auth": "xsuaa",
+      "[production]": {
+        "auth": "xsuaa"
+      }
     },
     "hana": {
       "deploy-format": "hdbtable"

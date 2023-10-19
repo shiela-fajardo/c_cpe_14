@@ -1,4 +1,4 @@
-_schema-version: '3.1'
+_schema-version: "3.1"
 ID: risk-management
 version: 2.0.0
 description: "Template for the Learning Journey Building side-by-side extensions on SAP BTP"
@@ -60,10 +60,11 @@ resources:
       config:
         xsappname: risk-management-${org}-${space}
         tenant-mode: dedicated
-        oauth2-configuration: # <-- add this
-        redirect-uris:
-          # example: - https://risk-management-approuter.cfapps.eu10-004.hana.ondemand.com/login/callback
-          - https:///login/callback
+        oauth2-configuration:
+          # <-- add this
+          redirect-uris:
+            # example: - https://risk-management-approuter.cfapps.eu10-004.hana.ondemand.com/login/callback
+            - https://*risk-management*.cfapps.*.hana.ondemand.com/login/callback
   - name: risk-management-db
     type: com.sap.xs.hdi-container
     parameters:
